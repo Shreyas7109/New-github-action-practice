@@ -22,7 +22,14 @@ jobs:
 
       - name: check 1
         run: echo "pwd"
+  # Job 2
+  Say-Bye:
+    runs-on: ubuntu-latest
+
     steps:
-      - name: checking 2nd step
-        run: echo "2nd stage working"
+      - name: Say bye
+        run: echo "Goodbye, my man!"
+
+      - name: Check second job
+        run: echo "Second job is working"
 #Actions
