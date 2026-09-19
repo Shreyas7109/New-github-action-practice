@@ -13,6 +13,11 @@ jobs:
 #This step will automatically clone the code of the current branch
       - name: Checkout the code
         uses: actions/checkout@v7
+# 2. Install and configure Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11' # Exact version or version range 
 #This step will install the linting tool
       - name: Install Python linter
         run: pip install ruff
