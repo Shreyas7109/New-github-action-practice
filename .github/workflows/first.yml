@@ -1,18 +1,26 @@
 #Workflow
 #Should have a name
 name: First workflow
-
+#on tells when the workflow should run (give indentation by tab)
 on:
   push:
   workflow_dispatch: 
 #jobs
+#Jobs should be inside the workflow
+#job tells what the workflow should do; there can be one or more than one job, hence we write jobs. jobs in an object, so it needs indentation
 
 jobs:
+#1st job (give indentation)
   Say-Hello:
+  # creates an ephemeral container with Ubuntu running
     runs-on: ubuntu-latest  
 #Steps
+#Should be inside the jobs
     steps:
       - name: Just say hello 
         run: echo "What's up, my man!"
+
+      - name: check 1
+        run: echo "pwd"
     
 #Actions
