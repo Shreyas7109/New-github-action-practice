@@ -1,4 +1,3 @@
-#This code is from test linter
 from flask import Flask, render_template
 app = Flask(__name__)
 
