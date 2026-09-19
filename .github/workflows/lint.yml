@@ -1,0 +1,14 @@
+#Whenever someone changes the python code, 
+#The linter will check if the syntax, format, and indentation (linting) are correct or not
+name: Auto linter
+
+on:
+  push:
+    paths: "*.py"
+
+jobs:
+  Code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v7
