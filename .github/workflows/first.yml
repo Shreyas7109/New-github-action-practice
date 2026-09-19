@@ -3,7 +3,6 @@
 name: First workflow
 #on tells when the workflow should run (give indentation by tab)
 on:
-  push:
   workflow_dispatch: 
 #jobs
 #Jobs should be inside the workflow
