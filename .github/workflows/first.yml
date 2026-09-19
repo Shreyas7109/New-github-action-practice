@@ -22,5 +22,7 @@ jobs:
 
       - name: check 1
         run: echo "pwd"
-    
+    steps:
+      - name: checking 2nd step
+        run: echo "2nd stage working"
 #Actions
